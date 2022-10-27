@@ -9,6 +9,12 @@ function Profile() {
         <Text>Christianugoo06</Text>
         <Text>Nwabiukwu Christian Ugochukwu</Text>
       </Flex>
+      <Box>
+      <Box h='142px' w='100%'></Box>
+      <Image />
+      <Heading />
+      <Text>Twitter Link</Text>
+    </Box>
     </div>
   )
 }

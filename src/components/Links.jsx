@@ -1,14 +1,14 @@
-import { Box, Flex } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Flex, Heading, Image } from "@chakra-ui/react";
+import React from "react";
 
 function Links() {
   return (
     <Box>
-      <Flex justify="center" align="center">
-        <Text>Twitter Link</Text>
-      </Flex>
+      <Image />
+      <Heading />
+      <Text>Twitter Link</Text>
     </Box>
-  )
+  );
 }
 
-export default Links
+export default Links;
