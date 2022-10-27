@@ -1,5 +1,8 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Text, Box } from "@chakra-ui/react";
 import React from "react";
+import '../assets/img/ifg.png'
+
+
 
 function Footer() {
   return (
@@ -8,10 +11,11 @@ function Footer() {
         Zuri<span>.</span>Internship
       </Text>
       <Text>HNG Internship 9 Frontend Task</Text>
-      <Box
-        bg="url('../assets/img/ifg.svg')"
+      <Box h="32px" w="132px"
+        bg="url('../assets/img/ifg.png')"
         bgPosition="center"
         bgRepeat="no-repeat"
+        bgSize="cover"
       />
     </Flex>
   );

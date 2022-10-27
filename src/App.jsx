@@ -12,7 +12,7 @@ function App() {
     <VStack w="100%" h="100vh" p="20px 50px">
       <Profile />
       <Links />
-      {/* <Footer /> */}
+      <Footer />
     </VStack>
   );
 }
