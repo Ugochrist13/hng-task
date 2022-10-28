@@ -1,8 +1,8 @@
 @media screen and (max-width: 750px) {
-    .links{
-        padding: 30px 0px;
+    #links{
+        padding: 0px 5px;
     }
-    .links a{
+    #links a{
         font-size: 14px;
     }
 }

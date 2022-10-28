@@ -12,12 +12,12 @@ import './links.css'
 function Links() {
   return (
     <>
-      <VStack className="links" w="100%" p="50px 50px" gap="20px">
+      <VStack id="links" w="100%" p="50px 20px" gap="20px">
       <VStack
           h="76px"
           bg="gray.200"
           w="100%"
-          p="24px 32px"
+          p="24px 0px"
           borderRadius="10px"
         >
           <Button
@@ -34,7 +34,7 @@ function Links() {
           h="76px"
           bg="gray.200"
           w="100%"
-          p="24px 32px"
+          p="24px 0px"
           borderRadius="10px"
         >
           <Button
@@ -51,7 +51,7 @@ function Links() {
           h="76px"
           bg="gray.200"
           w="100%"
-          p="24px 32px"
+          p="24px 0px"
           borderRadius="10px"
         >
           <Button
@@ -68,7 +68,7 @@ function Links() {
           h="76px"
           bg="gray.200"
           w="100%"
-          p="24px 32px"
+          p="24px 0px"
           borderRadius="10px"
         >
           <Button
@@ -87,7 +87,7 @@ function Links() {
           h="76px"
           bg="gray.200"
           w="100%"
-          p="24px 32px"
+          p="24px 0px"
           borderRadius="10px"
         >
           <Button
@@ -106,7 +106,7 @@ function Links() {
           h="76px"
           bg="gray.200"
           w="100%"
-          p="24px 32px"
+          p="24px 0px"
           borderRadius="10px"
         >
           <Button
