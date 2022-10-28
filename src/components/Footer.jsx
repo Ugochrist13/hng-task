@@ -1,22 +1,21 @@
-import { Flex, Text, Box } from "@chakra-ui/react";
+import { Flex, Text, Box, Image } from "@chakra-ui/react";
 import React from "react";
-import '../assets/img/ifg.png'
+import logo from '../assets/img/ifg.svg'
+import './footer.css'
 
 
 
 function Footer() {
+  
   return (
-    <Flex gap="100px" pt="100px" justify="center" alignItems="center">
+    <Flex className="footer" w="100%" h="50px" pt="50px" mt="50px" gap="80px" justifyContent="center" alignItems="center">
       <Text>
         Zuri<span>.</span>Internship
       </Text>
       <Text>HNG Internship 9 Frontend Task</Text>
-      <Box h="32px" w="132px"
-        bg="url('../assets/img/ifg.png')"
-        bgPosition="center"
-        bgRepeat="no-repeat"
-        bgSize="cover"
-      />
+      <Box >
+      <Image src={logo} />
+      </Box>
     </Flex>
   );
 }

@@ -1,0 +1,14 @@
+
+@media screen and (max-width: 750px) {
+    .footer{
+        gap: 50px;
+        font-size: smaller;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer{
+        flex-direction: column;
+        font-size: smaller;
+    }
+}

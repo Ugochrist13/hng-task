@@ -1,18 +1,34 @@
 import {
-  Box,
   Button,
-  Flex,
   VStack,
-  Text,
   IconButton,
   HStack,
 } from "@chakra-ui/react";
-import { NavLink } from "react-router-dom";
+import slack from '../assets/img/slack.svg'
+import gHub from '../assets/img/gHub.svg'
+
 
 function Links() {
   return (
     <>
       <VStack w="100%" pt="50px" gap="20px">
+      <VStack
+          h="76px"
+          bg="gray.200"
+          w="100%"
+          p="24px 32px"
+          borderRadius="10px"
+        >
+          <Button
+            id="twitter_link"
+            colorScheme="gray.900"
+            fontSize="18px"
+            h="28px"
+            color="black"
+          >
+            <a href="https://twitter.com/Christianugoo06">Twitter Link</a>
+          </Button>
+        </VStack>
         <VStack
           h="76px"
           bg="gray.200"
@@ -107,11 +123,11 @@ function Links() {
           gap="20px"
           h="76px"
           w="100%"
-          p="24px 32px"
+          mb={70}
           borderRadius="10px"
         >
-          <IconButton />
-          <IconButton />
+          <button ><a href="https://slack.com"><img src={slack} /></a></button>
+          <button ><a href="https://github.com"><img src={gHub} /></a></button>
         </HStack>
       </VStack>
     </>
