@@ -1,7 +1,28 @@
 
+
+.footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+#zuri{
+    font-weight: 700;
+    text-align: center;
+    height: 100%;
+    padding-bottom: 16px;
+}
+#hng{
+font-weight: 400;
+text-align: center;
+height: 100%;
+}
+span{
+    font-size: 2rem;
+    color: red;
+}
 @media screen and (max-width: 750px) {
     .footer{
-        gap: 50px;
         font-size: smaller;
     }
 }
@@ -9,6 +30,8 @@
 @media screen and (max-width: 500px) {
     .footer{
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         font-size: smaller;
     }
 }

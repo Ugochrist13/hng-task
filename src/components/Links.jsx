@@ -11,7 +11,7 @@ import gHub from '../assets/img/gHub.svg'
 function Links() {
   return (
     <>
-      <VStack w="100%" pt="50px" gap="20px">
+      <VStack className="links" w="100%" p="50px 50px" gap="20px">
       <VStack
           h="76px"
           bg="gray.200"
