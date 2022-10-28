@@ -40,7 +40,7 @@ function Profile() {
           id="slack"
           display="none"
         >
-          Nwabiukwu Christian Ugochukwu
+          ugochukwu christian
         </Text>
       </VStack>
     </Flex>
