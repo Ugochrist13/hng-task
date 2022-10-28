@@ -6,6 +6,7 @@ import {
 } from "@chakra-ui/react";
 import slack from '../assets/img/slack.svg'
 import gHub from '../assets/img/gHub.svg'
+import './links.css'
 
 
 function Links() {
@@ -26,7 +27,7 @@ function Links() {
             h="28px"
             color="black"
           >
-            <a href="https://twitter.com/Christianugoo06">Twitter Link</a>
+            <a fontSize="18px" href="https://twitter.com/Christianugoo06">Twitter Link</a>
           </Button>
         </VStack>
         <VStack
@@ -43,7 +44,7 @@ function Links() {
             h="28px"
             color="black"
           >
-            <a href="https://training.zuri.team/">Zuri Team</a>
+            <a fontSize="18px" href="https://training.zuri.team/">Zuri Team</a>
           </Button>
         </VStack>
         <VStack
@@ -60,7 +61,7 @@ function Links() {
             h="28px"
             color="black"
           >
-            <a href="http://books.zuri.team">Zuri Books</a>
+            <a fontSize="18px" href="http://books.zuri.team">Zuri Books</a>
           </Button>
         </VStack>
         <VStack
@@ -77,8 +78,8 @@ function Links() {
             h="28px"
             color="black"
           >
-            <a href="https://books.zuri.team/python-for-beginners?ref_id=Nwabiukwu Christian Ugochukwu">
-              Pyhton Books
+            <a fontSize="18px" href="https://books.zuri.team/python-for-beginners?ref_id=Nwabiukwu Christian Ugochukwu">
+              Python Books
             </a>
           </Button>
         </VStack>
@@ -96,7 +97,7 @@ function Links() {
             h="28px"
             color="black"
           >
-            <a href="https://background.zuri.team,">
+            <a fontSize="18px" href="https://background.zuri.team,">
               Background Check for Coders
             </a>
           </Button>
@@ -115,7 +116,7 @@ function Links() {
             h="28px"
             color="black"
           >
-            <a href="https://books.zuri.team/design-rules">Design Books</a>
+            <a fontSize="18px" href="https://books.zuri.team/design-rules">Design Books</a>
           </Button>
         </VStack>
         <HStack

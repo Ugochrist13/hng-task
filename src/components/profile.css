@@ -1,0 +1,9 @@
+@media screen and (max-width: 700px) {
+    #menu{
+        display: inline;
+        transform: none;
+    }
+    #share{
+        display: none;
+    }
+}

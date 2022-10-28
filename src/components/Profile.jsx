@@ -1,12 +1,14 @@
-import { Box, Flex, Heading, Image, Text, VStack } from "@chakra-ui/react";
+import { Flex, Image, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import share from '../assets/img/share.svg'
 import menu from '../assets/img/menu.svg'
+import './profile.css'
 
 function Profile() {
+
   return (
-    <VStack className="profile" h="142px" w="100%" mt={10}>
-    {/* <Flex><Image marginLeft="80rem" transform="translateY(10px)" {isLargeScreen? src={share}: src{menu}} /></Flex> */}
+    <Flex className="profile" h="142px" w="100%" flexDirection="column" alignItems="center" justifyContent="center" mt={10}>
+    <Flex w="100%" flexDirection="row" alignItems="center" justifyContent="flex-end" ><Image id="share"  transform="translateY(10px)" src ={share}/><Image id="menu" display="none" marginLeft="20rem" transform="translateY(15px)" src ={menu}/></Flex>
       <VStack h="88px" w="88px">
         <Image
           id="profile_img"
@@ -41,7 +43,7 @@ function Profile() {
           Nwabiukwu Christian Ugochukwu
         </Text>
       </VStack>
-    </VStack>
+    </Flex>
   );
 }
 
