@@ -24,17 +24,14 @@ function Contact() {
         <Box
           display="flex"
           w="100%"
-          justifyContent="space-around"
+          justifyContent="space-between"
           alignContent="center"
         >
-          <Box
-            w="45%"
-            display="flex"
-            justifyContent="space-around"
-            alignContent="start"
-          >
+          <Box w="45%">
             <label>First Name </label>
+            <br/>
             <Input
+            w="100%" h="44px" borderRadius="8px"
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="400"
@@ -47,14 +44,11 @@ function Contact() {
               placeholder="Enter your first name"
             />
           </Box>
-          <Box
-            w="45%"
-            display="flex"
-            justifyContent="space-around"
-            alignContent="start"
-          >
+          <Box w="45%">
             <label>Last Name </label>
+            <br/>
             <Input
+            w="100%" h="44px" borderRadius="8px"
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="400"
@@ -68,10 +62,11 @@ function Contact() {
             />
           </Box>
         </Box>
-        <Box>
+        <Box w="100%" >
           <label>Email </label>
           <br />
           <Input
+          w="100%" h="44px" borderRadius="8px"
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
