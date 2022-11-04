@@ -9,17 +9,67 @@ function Contact() {
 
   return (
     <VStack spacing={10}>
-      <Heading>Contact Me</Heading>
-      <p>Hi dear, contact me to ask me anything you have in mind</p>
       <Form
+        className="form"
         method="post"
         action="/"
         onChange={(event) => {
           submit(event.currentTarget);
         }}
       >
-        <Box display="flex">
-          <label>First Name </label>
+        <div>
+          <Heading>Contact Me</Heading>
+          <p>Hi dear, contact me to ask me anything you have in mind</p>
+        </div>
+        <Box
+          display="flex"
+          w="100%"
+          justifyContent="space-around"
+          alignContent="center"
+        >
+          <Box
+            w="45%"
+            display="flex"
+            justifyContent="space-around"
+            alignContent="start"
+          >
+            <label>First Name </label>
+            <Input
+              fontFamily="Inter"
+              fontSize="16px"
+              fontWeight="400"
+              lineHeight="24px"
+              letterSpacing="0em"
+              textAlign="left"
+              type="text"
+              id="first_name"
+              name="First Name"
+              placeholder="Enter your first name"
+            />
+          </Box>
+          <Box
+            w="45%"
+            display="flex"
+            justifyContent="space-around"
+            alignContent="start"
+          >
+            <label>Last Name </label>
+            <Input
+              fontFamily="Inter"
+              fontSize="16px"
+              fontWeight="400"
+              lineHeight="24px"
+              letterSpacing="0em"
+              textAlign="left"
+              type="text"
+              id="last_name"
+              name="Last Name"
+              placeholder="Enter your last name"
+            />
+          </Box>
+        </Box>
+        <Box>
+          <label>Email </label>
           <br />
           <Input
             fontFamily="Inter"
@@ -28,53 +78,21 @@ function Contact() {
             lineHeight="24px"
             letterSpacing="0em"
             textAlign="left"
-            type="text"
-            id="first_name"
-            name="First Name"
-            placeholder="Enter your first name"
-          />
-          <br />
-          <br />
-          <label>Last Name </label>
-          <br />
-          <Input
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="400"
-            lineHeight="24px"
-            letterSpacing="0em"
-            textAlign="left"
-            type="text"
-            id="last_name"
-            name="Last Name"
-            placeholder="Enter your last name"
+            type="email"
+            id="email"
+            name="Email"
+            placeholder="e.g yourname@email.com"
           />
         </Box>
-        <br />
-        <label>Email </label>
-        <br />
-        <Input
-          fontFamily="Inter"
-          fontSize="16px"
-          fontWeight="400"
-          lineHeight="24px"
-          letterSpacing="0em"
-          textAlign="left"
-          type="email"
-          id="email"
-          name="Email"
-          placeholder="e.g yourname@email.com"
-        />
-        <br />
-        <br />
-        <label>Message</label>
-        <br />
-        <Textarea
-          id="message"
-          placeholder="Send me a message, and I will reply as soon as possible"
-          name="Message"
-        />
-        <br />
+        <Box>
+          <label>Message</label>
+          <br />
+          <Textarea
+            id="message"
+            placeholder="Send me a message, and I will reply as soon as possible"
+            name="Message"
+          />
+        </Box>
         <Flex>
           <input type="checkbox" />
           <p>
@@ -91,8 +109,9 @@ function Contact() {
         >
           Submit
         </button>
+        <Box w="100%" b="1px solid gray.700" h="0" />
+        <Footer />
       </Form>
-      <Footer />
     </VStack>
   );
 }
