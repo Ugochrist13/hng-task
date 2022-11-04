@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Form, useNavigate, useSubmit } from "react-router-dom";
 import Footer from "./Footer";
 
@@ -8,8 +8,8 @@ function Contact() {
 
   return (
     <div>
-    <h1>Contact Me</h1>
-    <p>Hi dear, contact me to ask me anything you have in mind</p>
+      <h1>Contact Me</h1>
+      <p>Hi dear, contact me to ask me anything you have in mind</p>
       <Form
         method="post"
         action="/"
@@ -17,50 +17,52 @@ function Contact() {
           submit(event.currentTarget);
         }}
       >
-        <label for="name" >
-          First Name
+        <div>
+          <label>First Name </label>
+          <br />
           <input
             type="text"
             id="first_name"
             name="First Name"
-            placeholder="e.g Christian"
+            placeholder="Enter your first name"
           />
-        </label>
-        <br />
-        <label for="name">
-        Last Name
+
+          <br />
+          <label>Last Name </label>
+          <br />
           <input
             type="text"
             id="last_name"
             name="Last Name"
-            placeholder="e.g Nwabiukwu"
+            placeholder="Enter your last name"
           />
-        </label>
+        </div>
         <br />
-        <label for="email" >
-        Email
-          <input
-            type="text"
-            id="email"
-            name="Email"
-            placeholder="e.g Christian"
-          />
-        </label>
+        <label>Email </label>
         <br />
-        <label for="message">Message</label>
-        <textarea id="message" name="Message"></textarea>
+        <input
+          type="email"
+          id="email"
+          name="Email"
+          placeholder="e.g yourname@email.com"
+        />
+
         <br />
-        <button
-          type="submit"
-          id="btn__submit"
-          onClick={() => {
-            navigate("/");
-          }}
-        >
-          Submit
-        </button>
-        <input type="checkbox"/>
-        <p>You agree to providing your data to Christian Nwabiukwu who may contact you</p>
+        <label>Message</label>
+        <br />
+        <textarea
+          id="message"
+          placeholder="Send me a message, and I will reply as soon as possible"
+          name="Message"
+        />
+        <br />
+        <div>
+          <input type="checkbox" />
+          <p>
+            You agree to providing your data to Christian Nwabiukwu who may
+            contact you
+          </p>
+        </div>
         <button
           type="submit"
           id="btn__submit"
