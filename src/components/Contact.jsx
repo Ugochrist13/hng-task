@@ -1,27 +1,29 @@
 import React from "react";
-import { Form, useForm } from "react-router-dom";
+import { Form, useSubmit } from "react-router-dom";
 
 function Contact() {
+const submit = useSubmit()
 
-    const [form, setForm] = useForm({})
   return (
     <div>
-      <Form onSubmit={submit}>
-        <label for="name" name="First name">
-          <input type="text" id="first_name" placeholder="e.g Christian" />
+      <Form method="post" onChange={(event) => {
+        submit(event.currentTarget);
+      }}>
+        <label for="name" name="First name"> First Name
+          <input type="text" id="first_name" name="First Name" placeholder="e.g Christian" />
         </label>
         <br/>
         <label for="name" name="Last name">
-          <input type="text" id="last_name" placeholder="e.g Nwabiukwu" />
+          <input type="text" id="last_name" name="Last Name" placeholder="e.g Nwabiukwu" />
         </label>
         <br/>
         <label for="" name="Email">
-          <input type="text" id="email" placeholder="e.g Christian" />
+          <input type="text" id="email" name="Email" placeholder="e.g Christian" />
         </label>
         <br/>
-        <textarea id="message"></textarea>
+        <textarea id="message" name="Message"></textarea>
         <br/>
-        <button type="submit" id="btn__submit"></button>
+        <button type="submit" id="btn__submit">Submit</button>
       </Form>
     </div>
   );

@@ -7,6 +7,7 @@ import {
 import slack from '../assets/img/slack.svg'
 import gHub from '../assets/img/gHub.svg'
 import './links.css'
+import { Link } from "react-router-dom";
 
 
 function Links() {
@@ -117,6 +118,23 @@ function Links() {
             color="black"
           >
             <a fontSize="18px" href="https://books.zuri.team/design-rules">Design Books</a>
+          </Button>
+        </VStack>
+        <VStack
+          h="76px"
+          bg="gray.200"
+          w="100%"
+          p="24px 0px"
+          borderRadius="10px"
+        >
+          <Button
+            id="book__design"
+            colorScheme="gray.900"
+            fontSize="18px"
+            h="28px"
+            color="black"
+          >
+            <Link fontSize="18px" to="/contact">Contact Me</Link>
           </Button>
         </VStack>
         <HStack
