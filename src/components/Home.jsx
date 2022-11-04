@@ -2,6 +2,7 @@ import { VStack } from "@chakra-ui/react";
 import Links from "./Links";
 import Profile from "./Profile";
 import Footer from "./Footer";
+import './home.css'
 
 function Home() {
   return (
