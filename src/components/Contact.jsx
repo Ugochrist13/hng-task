@@ -8,7 +8,7 @@ function Contact() {
   const navigate = useNavigate();
 
   return (
-    <VStack>
+    <VStack spacing={10}>
       <Heading>Contact Me</Heading>
       <p>Hi dear, contact me to ask me anything you have in mind</p>
       <Form
@@ -18,10 +18,16 @@ function Contact() {
           submit(event.currentTarget);
         }}
       >
-        <Box>
+        <Box display="flex">
           <label>First Name </label>
           <br />
           <Input
+            fontFamily="Inter"
+            fontSize="16px"
+            fontWeight="400"
+            lineHeight="24px"
+            letterSpacing="0em"
+            textAlign="left"
             type="text"
             id="first_name"
             name="First Name"
@@ -32,6 +38,12 @@ function Contact() {
           <label>Last Name </label>
           <br />
           <Input
+            fontFamily="Inter"
+            fontSize="16px"
+            fontWeight="400"
+            lineHeight="24px"
+            letterSpacing="0em"
+            textAlign="left"
             type="text"
             id="last_name"
             name="Last Name"
@@ -42,6 +54,12 @@ function Contact() {
         <label>Email </label>
         <br />
         <Input
+          fontFamily="Inter"
+          fontSize="16px"
+          fontWeight="400"
+          lineHeight="24px"
+          letterSpacing="0em"
+          textAlign="left"
           type="email"
           id="email"
           name="Email"
