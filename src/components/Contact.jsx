@@ -9,7 +9,7 @@ function Contact() {
 
   return (
     <VStack spacing={10}>
-      <Form
+      <Form 
         className="form"
         method="post"
         action="/"
@@ -79,34 +79,34 @@ function Contact() {
             placeholder="e.g yourname@email.com"
           />
         </Box>
-        <Box>
+        <Box w="100%">
           <label>Message</label>
           <br />
-          <Textarea
+          <Textarea w="100%" h="132px" borderRadius="8px" p="12px 14px"
             id="message"
             placeholder="Send me a message, and I will reply as soon as possible"
             name="Message"
           />
         </Box>
-        <Flex>
+        <Flex gap={5}>
           <input type="checkbox" />
           <p>
             You agree to providing your data to Christian Nwabiukwu who may
             contact you
           </p>
         </Flex>
-        <button
+        <button 
           type="submit"
           id="btn__submit"
           onClick={() => {
             navigate("/");
           }}
         >
-          Submit
+          Send message
         </button>
         <Box w="100%" b="1px solid gray.700" h="0" />
-        <Footer />
       </Form>
+      <Footer />
     </VStack>
   );
 }
