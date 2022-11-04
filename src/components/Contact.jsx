@@ -1,14 +1,15 @@
-import React, { useState } from "react";
 import { Form, useNavigate, useSubmit } from "react-router-dom";
 import Footer from "./Footer";
+import "./contact.css";
+import { Box, Flex, Heading, Input, Textarea, VStack } from "@chakra-ui/react";
 
 function Contact() {
   const submit = useSubmit();
   const navigate = useNavigate();
 
   return (
-    <div>
-      <h1>Contact Me</h1>
+    <VStack>
+      <Heading>Contact Me</Heading>
       <p>Hi dear, contact me to ask me anything you have in mind</p>
       <Form
         method="post"
@@ -17,52 +18,52 @@ function Contact() {
           submit(event.currentTarget);
         }}
       >
-        <div>
+        <Box>
           <label>First Name </label>
           <br />
-          <input
+          <Input
             type="text"
             id="first_name"
             name="First Name"
             placeholder="Enter your first name"
           />
-
+          <br />
           <br />
           <label>Last Name </label>
           <br />
-          <input
+          <Input
             type="text"
             id="last_name"
             name="Last Name"
             placeholder="Enter your last name"
           />
-        </div>
+        </Box>
         <br />
         <label>Email </label>
         <br />
-        <input
+        <Input
           type="email"
           id="email"
           name="Email"
           placeholder="e.g yourname@email.com"
         />
-
+        <br />
         <br />
         <label>Message</label>
         <br />
-        <textarea
+        <Textarea
           id="message"
           placeholder="Send me a message, and I will reply as soon as possible"
           name="Message"
         />
         <br />
-        <div>
+        <Flex>
           <input type="checkbox" />
           <p>
             You agree to providing your data to Christian Nwabiukwu who may
             contact you
           </p>
-        </div>
+        </Flex>
         <button
           type="submit"
           id="btn__submit"
@@ -74,7 +75,7 @@ function Contact() {
         </button>
       </Form>
       <Footer />
-    </div>
+    </VStack>
   );
 }
 
