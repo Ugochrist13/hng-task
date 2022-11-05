@@ -11,7 +11,7 @@ function Footer() {
       </p>
       <p id="hng">HNG Internship 9 Frontend Task</p>
       <div className="img">
-        <img src={logo} />
+        <img src={logo} w="100%" h="100%" />
       </div>
     </div>
   );

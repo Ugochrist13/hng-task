@@ -3,23 +3,34 @@
 .footer{
     display: flex;
     width: 100%;
+    height: 160px;
     align-items: center;
+    align-content: center;
     justify-content: space-between;
+    border-top: .5px solid rgba(128, 128, 128, 0.562);
 }
 #zuri{
     font-weight: 700;
     text-align: center;
-    height: 100%;
-    padding-bottom: 16px;
+    height: 24px;
+    /* padding-bottom: 16px; */
 }
 #hng{
 font-weight: 400;
 text-align: center;
-height: 100%;
+height: 24px;
 }
 span{
+    text-align: center;
     font-size: 2rem;
     color: red;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 133px;
+    height: 32px;
 }
 @media screen and (max-width: 750px) {
     .footer{

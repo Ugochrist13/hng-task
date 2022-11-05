@@ -8,7 +8,7 @@ function Contact() {
   const navigate = useNavigate();
 
   return (
-    <VStack spacing={10}>
+    <VStack p="5px 20px">
       <Form 
         className="form"
         method="post"
