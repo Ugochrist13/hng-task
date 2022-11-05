@@ -19,7 +19,12 @@ function Contact() {
       >
         <div>
           <Heading>Contact Me</Heading>
-          <p>Hi dear, contact me to ask me anything you have in mind</p>
+          <p               fontFamily="Inter"
+              fontSize="18px"
+              fontWeight="400"
+              lineHeight="28px"
+              letterSpacing="0em"
+              textAlign="justify" >Hi dear, contact me to ask me anything you have in mind</p>
         </div>
         <Box
           className="name"
@@ -29,7 +34,8 @@ function Contact() {
           alignContent="center"
         >
           <Box id="firstname" w="45%">
-            <label>First Name </label>
+            <label fontSize="14px" fontWeight="500" fontFamily="Inter" lineHeight="20px"
+            letterSpacing="0em" >First Name </label>
             <br />
             <Input
               w="100%"
@@ -48,7 +54,8 @@ function Contact() {
             />
           </Box>
           <Box id="firstname" w="45%">
-            <label>Last Name </label>
+            <label fontSize="14px" fontWeight="500" fontFamily="Inter" lineHeight="20px"
+            letterSpacing="0em"  >Last Name </label>
             <br />
             <Input
               w="100%"
@@ -68,7 +75,8 @@ function Contact() {
           </Box>
         </Box>
         <Box w="100%">
-          <label>Email </label>
+          <label fontSize="14px" fontWeight="500" fontFamily="Inter" lineHeight="20px"
+            letterSpacing="0em" >Email </label>
           <br />
           <Input
             w="100%"
@@ -87,7 +95,8 @@ function Contact() {
           />
         </Box>
         <Box w="100%">
-          <label>Message</label>
+          <label fontSize="14px" fontWeight="500" fontFamily="Inter" lineHeight="20px"
+            letterSpacing="0em" >Message</label>
           <br />
           <Textarea
             w="100%"

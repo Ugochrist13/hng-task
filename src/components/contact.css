@@ -25,20 +25,16 @@
   }
   .form {
     width: 95%;
-    font-size: smaller;
   }
   .name {
     flex-direction: column;
     row-gap: 15px;
-    font-size: smaller;
   }
   #firstname {
     width: 100%;
-    font-size: smaller;
   }
   #secondname {
     width: 100%;
-    font-size: smaller;
   }
 }
 
