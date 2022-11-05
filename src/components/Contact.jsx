@@ -18,13 +18,28 @@ function Contact() {
         }}
       >
         <div>
-          <Heading>Contact Me</Heading>
-          <p               fontFamily="Inter"
-              fontSize="18px"
-              fontWeight="400"
-              lineHeight="28px"
-              letterSpacing="0em"
-              textAlign="justify" >Hi dear, contact me to ask me anything you have in mind</p>
+          <Heading
+            fontFamily="Inter"
+            fontSize="36px"
+            fontWeight="600"
+            lineHeight="44px"
+            letterSpacing="-2%"
+            color="#101828"
+          >
+            Contact Me
+          </Heading>
+          <p
+            id="hi"
+            fontFamily="Inter"
+            fontSize="20px"
+            color="#475467"
+            fontWeight="400"
+            lineHeight="30px"
+            letterSpacing="0em"
+            textAlign="justify"
+          >
+            Hi dear, contact me to ask me anything you have in mind
+          </p>
         </div>
         <Box
           className="name"
@@ -34,12 +49,21 @@ function Contact() {
           alignContent="center"
         >
           <Box id="firstname" w="45%">
-            <label fontSize="14px" fontWeight="500" fontFamily="Inter" lineHeight="20px"
-            letterSpacing="0em" >First Name </label>
+            <label
+              fontSize="14px"
+              fontWeight="500"
+              fontFamily="Inter"
+              lineHeight="20px"
+              letterSpacing="0em"
+              color="#344054"
+            >
+              First Name{" "}
+            </label>
             <br />
             <Input
               w="100%"
               h="44px"
+              color="#667085"
               borderRadius="8px"
               fontFamily="Inter"
               fontSize="16px"
@@ -54,12 +78,21 @@ function Contact() {
             />
           </Box>
           <Box id="firstname" w="45%">
-            <label fontSize="14px" fontWeight="500" fontFamily="Inter" lineHeight="20px"
-            letterSpacing="0em"  >Last Name </label>
+            <label
+              fontSize="14px"
+              fontWeight="500"
+              fontFamily="Inter"
+              lineHeight="20px"
+              letterSpacing="0em"
+              color="#344054"
+            >
+              Last Name{" "}
+            </label>
             <br />
             <Input
               w="100%"
               h="44px"
+              color="#667085"
               borderRadius="8px"
               fontFamily="Inter"
               fontSize="16px"
@@ -75,12 +108,21 @@ function Contact() {
           </Box>
         </Box>
         <Box w="100%">
-          <label fontSize="14px" fontWeight="500" fontFamily="Inter" lineHeight="20px"
-            letterSpacing="0em" >Email </label>
+          <label
+            fontSize="14px"
+            color="#344054"
+            fontWeight="500"
+            fontFamily="Inter"
+            lineHeight="20px"
+            letterSpacing="0em"
+          >
+            Email{" "}
+          </label>
           <br />
           <Input
             w="100%"
             h="44px"
+            color="#667085"
             borderRadius="8px"
             fontFamily="Inter"
             fontSize="16px"
@@ -95,12 +137,21 @@ function Contact() {
           />
         </Box>
         <Box w="100%">
-          <label fontSize="14px" fontWeight="500" fontFamily="Inter" lineHeight="20px"
-            letterSpacing="0em" >Message</label>
+          <label
+            fontSize="14px"
+            color="#344054"
+            fontWeight="500"
+            fontFamily="Inter"
+            lineHeight="20px"
+            letterSpacing="0em"
+          >
+            Message
+          </label>
           <br />
           <Textarea
             w="100%"
             h="132px"
+            color="#667085"
             borderRadius="8px"
             p="12px 14px"
             id="message"
@@ -110,7 +161,14 @@ function Contact() {
         </Box>
         <Flex gap={5}>
           <input type="checkbox" />
-          <p>
+          <p
+            fontFamily="Inter"
+            fontSize="16px"
+            fontWeight="400"
+            lineHeight="24px"
+            letterSpacing="0em"
+            color="#475467"
+          >
             You agree to providing your data to Christian Nwabiukwu who may
             contact you
           </p>
