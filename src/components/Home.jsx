@@ -6,7 +6,7 @@ import './home.css'
 
 function Home() {
   return (
-    <VStack id="App" w="100%" p="20px 100px">
+    <VStack id="App" w="100%" p="20px 20px">
       <Profile />
       <Links />
       <Footer />

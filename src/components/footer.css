@@ -7,13 +7,12 @@
     align-items: center;
     align-content: center;
     justify-content: space-between;
-    border-top: .5px solid rgba(128, 128, 128, 0.562);
+    border-top: .5px solid rgba(128, 128, 128, 0.329);
 }
 #zuri{
     font-weight: 700;
     text-align: center;
     height: 24px;
-    /* padding-bottom: 16px; */
 }
 #hng{
 font-weight: 400;

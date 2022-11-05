@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 function Links() {
   return (
     <>
-      <VStack id="links" w="100%" p="50px 20px" gap="20px">
+      <VStack id="links" w="100%" p="50px 150px" gap="20px">
       <VStack
           h="76px"
           bg="gray.200"
