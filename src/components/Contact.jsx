@@ -8,8 +8,8 @@ function Contact() {
   const navigate = useNavigate();
 
   return (
-    <VStack p="5px 20px">
-      <Form 
+    <VStack id="formcont" p="5px 20px">
+      <Form
         className="form"
         method="post"
         action="/"
@@ -22,16 +22,19 @@ function Contact() {
           <p>Hi dear, contact me to ask me anything you have in mind</p>
         </div>
         <Box
+          className="name"
           display="flex"
           w="100%"
           justifyContent="space-between"
           alignContent="center"
         >
-          <Box w="45%">
+          <Box id="firstname" w="45%">
             <label>First Name </label>
-            <br/>
+            <br />
             <Input
-            w="100%" h="44px" borderRadius="8px"
+              w="100%"
+              h="44px"
+              borderRadius="8px"
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="400"
@@ -44,11 +47,13 @@ function Contact() {
               placeholder="Enter your first name"
             />
           </Box>
-          <Box w="45%">
+          <Box id="firstname" w="45%">
             <label>Last Name </label>
-            <br/>
+            <br />
             <Input
-            w="100%" h="44px" borderRadius="8px"
+              w="100%"
+              h="44px"
+              borderRadius="8px"
               fontFamily="Inter"
               fontSize="16px"
               fontWeight="400"
@@ -62,11 +67,13 @@ function Contact() {
             />
           </Box>
         </Box>
-        <Box w="100%" >
+        <Box w="100%">
           <label>Email </label>
           <br />
           <Input
-          w="100%" h="44px" borderRadius="8px"
+            w="100%"
+            h="44px"
+            borderRadius="8px"
             fontFamily="Inter"
             fontSize="16px"
             fontWeight="400"
@@ -82,7 +89,11 @@ function Contact() {
         <Box w="100%">
           <label>Message</label>
           <br />
-          <Textarea w="100%" h="132px" borderRadius="8px" p="12px 14px"
+          <Textarea
+            w="100%"
+            h="132px"
+            borderRadius="8px"
+            p="12px 14px"
             id="message"
             placeholder="Send me a message, and I will reply as soon as possible"
             name="Message"
@@ -95,7 +106,7 @@ function Contact() {
             contact you
           </p>
         </Flex>
-        <button 
+        <button
           type="submit"
           id="btn__submit"
           onClick={() => {
@@ -104,7 +115,6 @@ function Contact() {
         >
           Send message
         </button>
-        <Box w="100%" b="1px solid gray.700" h="0" />
       </Form>
       <Footer />
     </VStack>

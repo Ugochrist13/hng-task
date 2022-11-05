@@ -19,3 +19,31 @@
   letter-spacing: 0em;
   border-radius: 8px;
 }
+@media screen and (max-width: 750px) {
+  .formcont {
+    padding: 0px 5px;
+  }
+  .form {
+    width: 95%;
+  }
+  .name {
+    flex-direction: column;
+
+    /* font-size: smaller; */
+  }
+  #firstname {
+    width: 100%;
+  }
+  #secondname {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #formcont {
+    padding: 0px 0px;
+  }
+  .form {
+    width: 100%;
+  }
+}
