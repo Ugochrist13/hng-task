@@ -1,5 +1,5 @@
 .form {
-  width: 70%;
+  width: 90%;
   padding: 64px 96px;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
     padding: 0px 5px;
   }
   .form {
-    width: 95%;
+    padding: 64px 50px;
   }
   .name {
     flex-direction: column;
@@ -43,7 +43,8 @@
     padding: 0px 0px;
   }
   .form {
-    width: 100%;
+    width: 95%;
+    padding: 64px 5px;
   }
   #hi {
     font-size: 18px;
