@@ -41,8 +41,15 @@ span{
 @media screen and (max-width: 520px) {
     .footer{
         flex-direction: column;
-        justify-content: flex-start;
+        height: 100px;
+        padding: 0 10px;
         align-items: flex-start;
         font-size: smaller;
+    }
+    #zuri{
+        margin-bottom: 30px;
+    }
+    .img{
+        display: block;
     }
 }
