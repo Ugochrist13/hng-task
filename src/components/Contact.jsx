@@ -17,7 +17,7 @@ function Contact() {
           submit(event.currentTarget);
         }}
       >
-        <div>
+        <div mb="5px">
           <Heading
             fontFamily="Inter"
             fontSize="36px"
