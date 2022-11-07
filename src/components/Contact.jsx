@@ -133,7 +133,8 @@ function Contact() {
             type="email"
             id="email"
             name="Email"
-            placeholder="e.g yourname@email.com" required
+            placeholder="e.g yourname@email.com"
+            required
           />
         </Box>
         <Box w="100%">
